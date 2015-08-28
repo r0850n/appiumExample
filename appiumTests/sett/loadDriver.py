@@ -16,7 +16,7 @@ class LoadDriver(object):
         desired_caps['platformVersion'] = '4.3'
         desired_caps['deviceName'] = 'Android Emulator'
         # Since the app is already installed launching it using package and activity name
-        desired_caps['app'] = 'sauce-storage:test_file_name' 
+        desired_caps['app'] = 'sauce-storage:atpwta.live.apk' 
         desired_caps['appPackage'] = 'atpwta.live'
         desired_caps['appActivity'] = '.activity.Main'
         # Adding appWait Activity since the activity name changes as the focus shifts to the ATP WTA app's first page
