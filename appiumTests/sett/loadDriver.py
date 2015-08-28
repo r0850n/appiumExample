@@ -14,7 +14,7 @@ class LoadDriver(object):
         desired_caps = {}
         desired_caps['platformName'] = 'Android'
         desired_caps['platformVersion'] = '4.3'
-        desired_caps['deviceName'] = 'Android Emulator'
+        desired_caps['deviceName'] = 'emulator-5554'
         # Since the app is already installed launching it using package and activity name
         desired_caps['app'] = 'http://storage.evozi.com/apk/dl/15/03/01/atpwta.live.apk?h=RyCZxBEzo2OybtH1lXaWug&t=1440767044' 
         desired_caps['appPackage'] = 'atpwta.live'
