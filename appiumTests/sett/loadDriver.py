@@ -20,5 +20,5 @@ class LoadDriver(object):
         desired_caps['appPackage'] = 'atpwta.live'
         desired_caps['appActivity'] = '.activity.Main'
         # Adding appWait Activity since the activity name changes as the focus shifts to the ATP WTA app's first page
-        #desired_caps['appWaitActivity'] = '.activity.root.TournamentList'
+        desired_caps['appWaitActivity'] = '.activity.root.TournamentList'
         return webdriver.Remote(settings.appiumHub2, desired_caps)
