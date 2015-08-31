@@ -51,6 +51,7 @@ class Android_ATP_WTA(unittest.TestCase):
             print(pageLoader.getText(citiesName))
 
         callendar.CITIES()[0].click()
+        self.assertTrue(1==1)
 #---START OF SCRIPT
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(Android_ATP_WTA)
