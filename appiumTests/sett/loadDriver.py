@@ -13,7 +13,7 @@ class LoadDriver(object):
 
         desired_caps = {}
         desired_caps['platformName'] = 'Android'
-        desired_caps['platformVersion'] = '5.1'
+        desired_caps['platformVersion'] = '4.3'
         desired_caps['deviceName'] = settings.emu
         # Since the app is already installed launching it using package and activity name
         desired_caps['app'] = 'sauce-storage:atpwta.live.apk'
