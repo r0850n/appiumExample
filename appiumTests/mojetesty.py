@@ -24,7 +24,7 @@ class Android_ATP_WTA(unittest.TestCase):
     def setUp(self):
         "Setup for the test"
         """ load driver from LoadDriver class"""
-        self.driver = LoadDriver.loadAppiumDriver()
+        self.driver = LoadDriver_realDevice.loadAppiumDriver()
  
     def tearDown(self):
         "Tear down the test"
@@ -69,10 +69,10 @@ class Android_ATP_WTA(unittest.TestCase):
         print("-------------------------------------------------------")
         time.sleep(5)
         #swipe DOWN        x1  y1  x2  y2   sleep
-        self.driver.swipe(475, 0, 475, 100, 400)
+        #self.driver.swipe(475, 0, 475, 100, 400)
         time.sleep(5)
         #swipe UP
-        self.driver.swipe(475, 500, 475, 0, 400)
+        #self.driver.swipe(475, 500, 475, 0, 400)
         time.sleep(5)
         lista_playerow.extend(aaa)
         for playerName in lista_playerow:
