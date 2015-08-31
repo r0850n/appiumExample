@@ -12,6 +12,7 @@ from pages.PageLoader import PageLoader
 from page_objects import PageObject,page_element
 from pages.mobilelocators import HomePage, RangingsPage,MobileATPWTAElements
 from sett.loadDriver import LoadDriver
+from sett.loadDriver2 import LoadDriver_realDevice
 from compiler.ast import TryExcept
 
 
@@ -23,7 +24,7 @@ class Android_ATP_WTA(unittest.TestCase):
     def setUp(self):
         "Setup for the test"
         """ load driver from LoadDriver class"""
-        self.driver = LoadDriver.loadAppiumDriver()
+        self.driver = LoadDriver_realDevice.loadAppiumDriver()
  
     def tearDown(self):
         "Tear down the test"
