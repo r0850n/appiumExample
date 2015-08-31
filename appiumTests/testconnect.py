@@ -36,6 +36,21 @@ class Android_ATP_WTA(unittest.TestCase):
         time.sleep(5)
         # load pages
         
+        pageLoader = PageLoader(self.driver)
+        mobile_elements = pageLoader.get_HomePage()
+        rangingsPage = pageLoader.get_RangingsPage()
+        playerListPage = pageLoader.get_PlayerListPage()
+        callendar = pageLoader.get_CallendarPage()
+
+        menubar = mobile_elements.NAV_BAR()
+        menubar.click()
+
+        rankings = mobile_elements.TOP_BAR_OPTIONS()
+        rankings[2].click()
+
+        for citiesName in callendar.CITIES():
+            print(pageLoader.getText(citiesName))
+            
         self.assertTrue(1==1)
 #---START OF SCRIPT
 if __name__ == '__main__':
