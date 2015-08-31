@@ -24,7 +24,7 @@ class Android_ATP_WTA(unittest.TestCase):
     def setUp(self):
         "Setup for the test"
         """ load driver from LoadDriver class"""
-        self.driver = LoadDriver_realDevice.loadAppiumDriver()
+        self.driver = LoadDriver.loadAppiumDriver()
  
     def tearDown(self):
         "Tear down the test"
