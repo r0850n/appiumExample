@@ -4,7 +4,7 @@ __author__ = 'Penny'
 # deviceName real device
 s_3 = '4df13ae160004fe1'
 emulator='emulator-5554'
-emu= 'Android emulator'
+emu= 'Google Nexus 7 HD Emulator'
 #appiumHub
 appiumHub = 'http://localhost:4723/wd/hub'
 #appium Point the driver address to use the Sauce Labs cloud
